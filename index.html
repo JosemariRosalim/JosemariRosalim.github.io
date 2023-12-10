@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rosalim_PersonalProfileWebpage</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <img src="logo.png" class="logo">
+    
+            <nav class="navbar">
+                <a href="index.html" >HOME</a>
+                <a href="blog.html" >IT 111 BLOG ENTRY</a>
+                <a href="flex.html" >FLEX PAGE</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <div id="random-text">Josemari G. Rosalim</div>
+                <h6>| Web Developer, Programmer |</h6>
+
+                <h4>About</h4>
+                    <p>I am currenty pursuing a degree in
+                    <br>Information Technology
+                    <br>at Bukidnon State University.
+                    <br>I am the only son of Mr. Joselito C. Rosalim & Mrs. Maridel G. Rosalim
+                    </p>
+                    <div class="A">
+                        <h1>Skills</h1>
+                        <ul class="skills">
+                          <li>Playing guitar</li>
+                          <li>Playing piano</li>
+                        </ul>
+                      </div>
+                    
+                      <div class="B">
+                        <h1>Hobbies</h1>
+                        <ul class="Hobbies">
+                          <li>Hiking</li>
+                          <li>Online games (ML, PUBG)</li>
+                          <li>Traveling</li>
+                          <li>Volleyball</li>
+                        </ul>
+                      </div>
+
+                <h5>Follow me on:</h5>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/profile.php?id=100080014864496"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://github.com/JosemariRosalim"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <a href="more.html" class="btn-box">More About Me</a>
+            </div>
+            <body>
+                <script>
+                  function getRandomColor() {
+                    const letters = '0123456789ABCDEF';
+                    let color = '#';
+                    for (let i = 0; i < 6; i++) {
+                      color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                  }
+              
+                  function changeTextColor() {
+                    const randomText = document.getElementById('random-text');
+                    randomText.style.color = getRandomColor();
+                  }
+              
+                  changeTextColor();
+                  setInterval(changeTextColor, 1000);
+                </script>
+              
+              </body>
+    
+        </section>
+    </body>
+    <footer>
+        <p><h6> Deisgned by: Josemari G. Rosalim  | Bachelor of Science in Information Technology  |  2023</h6></p>
+    </footer>
+    </html>
